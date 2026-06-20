@@ -1,0 +1,9 @@
+[package]
+name = "adaptor_navi"
+edition = "2024.beta"
+
+[dependencies]
+SupWallet = { local = "../../sup_wallet" }
+navi_protocol = { local = "../dependencies/navi_protocol" }
+navi_oracle = { local = "../dependencies/navi_oracle" }
+sui_system = { system = "sui_system", override = true }

@@ -1,0 +1,10 @@
+[package]
+name = "policy_rule_recipient_allowlist"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+
+[addresses]
+policy_rule_recipient_allowlist = "0x0"

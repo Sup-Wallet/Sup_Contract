@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_cetus"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+CetusCLMM = { local = "../dependencies/cetus_clmm" }
+
+[addresses]
+adaptor_cetus = "0x0"

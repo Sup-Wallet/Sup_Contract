@@ -1,0 +1,13 @@
+[package]
+name = "current_protocol"
+edition = "2024.beta"
+# Current Finance mainnet package — matches the id the app uses live
+# (CURRENT_PROTOCOL_PACKAGE_ID in apps/web/.../current-lending.ts).
+published-at = "0xfe1d8929d13b00aaecd7642dec1c6d41cab82882a1b139efa46bf61dfd6380bf"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+CurrentXOracle = { local = "../current_x_oracle" }
+
+[addresses]
+current_protocol = "0xfe1d8929d13b00aaecd7642dec1c6d41cab82882a1b139efa46bf61dfd6380bf"

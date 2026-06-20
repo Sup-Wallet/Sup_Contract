@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_haedal"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SuiSystem = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-system", rev = "framework/testnet" }
+SupWallet = { local = "../../sup_wallet" }
+HaedalProtocol = { local = "../dependencies/haedal" }
+
+[addresses]
+adaptor_haedal = "0x0"

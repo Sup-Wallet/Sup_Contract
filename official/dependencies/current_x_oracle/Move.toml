@@ -1,0 +1,10 @@
+[package]
+name = "CurrentXOracle"
+edition = "2024.beta"
+published-at = "0x144c57d6014488bc71c0902bddff482af090d13e2c61333ed903fe088220a92c"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+
+[addresses]
+current_x_oracle = "0x144c57d6014488bc71c0902bddff482af090d13e2c61333ed903fe088220a92c"

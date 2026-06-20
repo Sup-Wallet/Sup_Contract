@@ -1,0 +1,11 @@
+[package]
+name = "HaedalProtocol"
+edition = "2024.beta"
+published-at = "0x126e4cfb051cad744706df590ec399e8c02b6feae195c35b8b496280d5442a62"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SuiSystem = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-system", rev = "framework/testnet" }
+
+[addresses]
+haedal = "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d"

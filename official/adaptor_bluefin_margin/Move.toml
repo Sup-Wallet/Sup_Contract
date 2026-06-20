@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_bluefin_margin"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+bluefin_exchange = { local = "../dependencies/bluefin_exchange" }
+bluefin_spot = { local = "../dependencies/bluefin_spot" }
+
+[addresses]
+adaptor_bluefin_margin = "0x0"

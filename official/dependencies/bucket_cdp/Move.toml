@@ -1,0 +1,13 @@
+[package]
+name = "BucketCDP"
+edition = "2024.beta"
+published-at = "0x9f835c21d21f8ce519fec17d679cd38243ef2643ad879e7048ba77374be4036e"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+BucketFramework = { local = "../bucket_framework" }
+BucketUSDB = { local = "../bucket_usdb" }
+BucketOracle = { local = "../bucket_oracle" }
+
+[addresses]
+bucket_cdp = "0x9f835c21d21f8ce519fec17d679cd38243ef2643ad879e7048ba77374be4036e"

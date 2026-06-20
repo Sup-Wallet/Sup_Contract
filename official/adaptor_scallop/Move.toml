@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_scallop"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+ScallopProtocol = { local = "../dependencies/scallop_protocol" }
+ScallopSCoin = { local = "../dependencies/scallop_scoin" }
+
+[addresses]
+adaptor_scallop = "0x0"

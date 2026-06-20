@@ -1,0 +1,12 @@
+[package]
+name = "aftermath_perp"
+edition = "2024.beta"
+# VERIFY: replace with the real Aftermath Perpetuals mainnet package id before deploy.
+published-at = "0x0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+
+[addresses]
+# VERIFY: real Aftermath perpetuals runtime address at deploy.
+aftermath_perp = "0x0"

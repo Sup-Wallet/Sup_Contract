@@ -1,0 +1,14 @@
+[package]
+name = "BucketSaving"
+edition = "2024.beta"
+# latest mainnet published-at (v3) per Bucket-Protocol/v2-move-contracts bucket_saving/Published.toml;
+# [addresses] stays the original/type-defining id below.
+published-at = "0x5b60c3cdbb9ee31b856f7f8a6d4d6c8b91e3c0036a138fb9927529b05fd00373"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+BucketFramework = { local = "../bucket_framework" }
+BucketUSDB = { local = "../bucket_usdb" }
+
+[addresses]
+bucket_saving = "0x872d08a70db3db498aa7853276acea8091fdd9871b2d86bc8dcb8524526df622"

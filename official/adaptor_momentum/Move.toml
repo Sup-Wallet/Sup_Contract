@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_momentum"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+mmt_v3 = { local = "../dependencies/momentum_clmm" }
+
+[addresses]
+adaptor_momentum = "0x0"

@@ -1,0 +1,11 @@
+[package]
+name = "BucketSavingIncentive"
+edition = "2024.beta"
+published-at = "0xd2a385d9499ba7e2c95f6b3ce01a65c4dad44a5941c3b348a58a29ecd9dcead1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+BucketSaving = { local = "../bucket_saving" }
+
+[addresses]
+bucket_saving_incentive = "0x39692320d6fc01c27315a7972ed4717e4fd32eed43531ad6f55fd7f24b74e207"

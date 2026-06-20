@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_current_lending"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+current_protocol = { local = "../dependencies/current_protocol" }
+CurrentXOracle = { local = "../dependencies/current_x_oracle" }
+
+[addresses]
+adaptor_current_lending = "0x0"

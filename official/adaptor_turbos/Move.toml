@@ -1,0 +1,11 @@
+[package]
+name = "adaptor_turbos"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+TurbosCLMM = { local = "../dependencies/turbos_clmm" }
+
+[addresses]
+adaptor_turbos = "0x0"

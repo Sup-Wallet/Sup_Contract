@@ -1,0 +1,10 @@
+[package]
+name = "BucketFramework"
+edition = "2024.beta"
+published-at = "0x665188033384920a5bb5dcfb2ef21f54b4568d08b431718b97e02e5c184b92cc"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+
+[addresses]
+bucket_framework = "0x665188033384920a5bb5dcfb2ef21f54b4568d08b431718b97e02e5c184b92cc"

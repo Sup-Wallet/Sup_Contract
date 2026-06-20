@@ -1,0 +1,13 @@
+[package]
+name = "bluefin_exchange"
+edition = "2024.beta"
+# Bluefin Pro cross-margin DEX mainnet package (real name: bluefin_cross_margin_dex),
+# from the official contracts repo fireflyprotocol/bluefin-pro-contracts-public.
+# This is a lightweight compile stub of the surface the adaptor calls.
+published-at = "0xe238f46c63c8d3e4a9c104731ff0e3ca830660314789964d3ae53808084a50a0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+
+[addresses]
+bluefin_exchange = "0xe74481697f432ddee8dd6f9bd13b9d0297a5b63d55f3db25c4d3b5d34dad85b7"

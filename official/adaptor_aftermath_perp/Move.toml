@@ -1,0 +1,11 @@
+[package]
+name = "adaptor_aftermath_perp"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+aftermath_perp = { local = "../dependencies/aftermath_perp" }
+
+[addresses]
+adaptor_aftermath_perp = "0x0"

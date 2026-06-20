@@ -1,0 +1,7 @@
+[package]
+name = "NaviOracle"
+edition = "2024.beta"
+published-at = "0x203728f46eb10d19f8f8081db849c86aa8f2a19341b7fd84d7a0e74f053f6242"
+
+[addresses]
+navi_oracle = "0xca441b44943c16be0e6e23c5a955bb971537ea3289ae8016fbf33fffe1fd210f"

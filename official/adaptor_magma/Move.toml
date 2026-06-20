@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_magma"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+magma_clmm = { local = "../dependencies/magma_clmm" }
+
+[addresses]
+adaptor_magma = "0x0"

@@ -1,0 +1,16 @@
+[package]
+name = "ScallopProtocol"
+edition = "2024.beta"
+published-at = "0xde5c09ad171544aa3724dc67216668c80e754860f419136a68d78504eb2e2805"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+Math = { local = "../scallop_math" }
+X = { local = "../scallop_x" }
+Whitelist = { local = "../scallop_whitelist" }
+CoinDecimalsRegistry = { local = "../scallop_coin_decimals_registry" }
+Decimal = { local = "../scallop_decimal" }
+XOracle = { local = "../scallop_x_oracle" }
+
+[addresses]
+scallop_protocol = "0xefe8b36d5b2e43728cc323298626b83177803521d195cfb11e15b910e892fddf"

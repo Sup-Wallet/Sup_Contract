@@ -1,0 +1,12 @@
+[package]
+name = "adaptor_os_account"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+os_account = { local = "../../../os_account" }
+zzyzx_framework = { local = "../../../zzyzx_framework" }
+
+[addresses]
+adaptor_os_account = "0x0"

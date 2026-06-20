@@ -1,0 +1,28 @@
+[package]
+name = "MagmaClmm"
+edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
+# license = ""           # e.g., "MIT", "GPL", "Apache 2.0"
+# authors = ["..."]      # e.g., ["Joe Smith (joesmith@noemail.com)", "John Snow (johnsnow@noemail.com)"]
+published-at = "0x0acd1d187950450ae3e625375f8067a7802e99a05b6e655e1fec124a0e3c891e"
+
+[dependencies]
+IntegerMate = { git = "https://github.com/MagmaFinanceIO/integer-mate.git", subdir = "sui", rev = "v1.41.1" }
+MoveSTL = { git = "https://github.com/MagmaFinanceIO/move-stl.git", subdir = "sui", rev = "v1.41.1" }
+MagmaCaps = { git = "https://github.com/MagmaFinanceIO/magma_core_caps_interface.git", rev = "8c430f362883881474483e7335bd88500e4fde04" }
+
+[addresses]
+magma_clmm = "0x4a35d3dfef55ed3631b7158544c6322a23bc434fe4fca1234cb680ce0505f82d"
+
+# Named addresses will be accessible in Move as `@name`. They're also exported:
+# for example, `std = "0x1"` is exported by the Standard Library.
+# alice = "0xA11CE"
+
+[dev-dependencies]
+# The dev-dependencies section allows overriding dependencies for `--test` and
+# `--dev` modes. You can introduce test-only dependencies here.
+# Local = { local = "../path/to/dev-build" }
+
+[dev-addresses]
+# The dev-addresses section allows overwriting named addresses for the `--test`
+# and `--dev` modes.
+# alice = "0xB0B"

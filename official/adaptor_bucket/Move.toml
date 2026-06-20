@@ -1,0 +1,16 @@
+[package]
+name = "adaptor_bucket"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+SupWallet = { local = "../../sup_wallet" }
+BucketFramework = { local = "../dependencies/bucket_framework" }
+BucketUSDB = { local = "../dependencies/bucket_usdb" }
+BucketOracle = { local = "../dependencies/bucket_oracle" }
+BucketCDP = { local = "../dependencies/bucket_cdp" }
+BucketSaving = { local = "../dependencies/bucket_saving" }
+BucketSavingIncentive = { local = "../dependencies/bucket_saving_incentive" }
+
+[addresses]
+adaptor_bucket = "0x0"

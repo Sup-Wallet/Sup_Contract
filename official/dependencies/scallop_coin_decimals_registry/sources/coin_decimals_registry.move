@@ -1,0 +1,1 @@
+module coin_decimals_registry::coin_decimals_registry;
